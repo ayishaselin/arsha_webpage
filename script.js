@@ -1,5 +1,5 @@
 
-const { Html } = require("next/document");
+
 
 document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', function() {
