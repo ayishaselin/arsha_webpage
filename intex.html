@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARSHA - Company Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <!-- Bootstrap 5 CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Bootstrap Icons -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+ 
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">ARSHA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-get-started ms-3" id="contactPopupBtn">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+       <!-- Contact Popup -->
+       <div class="contact_popup_overlay" id="contactPopupOverlay">
+        <div class="contact_popup_container">
+            <div class="contact_popup_header">
+                <h2>Let's Get in Touch</h2>
+                <button class="contact_popup_close" id="contactPopupClose">&times;</button>
+            </div>
+            <div class="contact_popup_body">
+                <form id="contactPopupForm">
+                    <div class="contact_form_input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="your name" required>
+                    </div>
+                    <div class="contact_form_input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="contact_form_input">
+                        <label>Phone number</label>
+                        <div class="contact_phone_group">
+                            <div class="code">
+                                <input type="text" id="phoneCode" placeholder="+91" value="+91">
+                            </div>
+                            <div class="number">
+                                <input type="tel" id="phoneNumber" placeholder="contact number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact_form_input">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Drop a line"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="contact_form_submit">connect with us</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+    
+ 
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="animate__animated animate__fadeInUp">Better Solutions For Your Business</h1>
+                    <p class="animate__animated animate__fadeInUp delay-1">We are team of talented designers making websites with Bootstrap</p>
+                    <div class="d-flex animate__animated animate__fadeInUp delay-2">
+                        <a href="#" class="btn btn-get-started">Get Started</a>
+                        <a href="#" class="play-btn">
+                            <i class="fas fa-play"></i>
+                            <span>Watch Video</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="/images/home-image.png" alt="Hero Image" class="img-fluid hero-img animate__animated animate__fadeInRight" style="animation-duration: 1.2s; animation-delay: 0.3s;">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clients Section -->
+    <section class="clients">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="/images/logo/logo2.png" alt="Client Logo" class="img-fluid client-logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="/images/logo/logo3.png" alt="Client Logo" class="img-fluid client-logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="/images/logo/logo4.webp" alt="Client Logo" class="img-fluid client-logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="/images/logo/logo5.png" alt="Client Logo" class="img-fluid client-logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="/images/logo/logo6.png" alt="Client Logo" class="img-fluid client-logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="/images/logo/logo7.png" alt="Client Logo" class="img-fluid client-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>ABOUT US</h2>
+            </div>
+    
+            <div class="row content">
+                <div class="col-lg-6 animate__animated animate__fadeInLeft">
+                    <p>At Codo Academy, we are passionate about transforming education through technology. Our mission is to make high-quality learning accessible and engaging for everyone, regardless of their background or location.</p>
+                    <ul class="about-list">
+                        <li><i class="far fa-check-circle"></i> Tailored learning experiences that adapt to each student's pace and goals.</li>
+                        <li><i class="far fa-check-circle"></i> Real-world projects that build skills and confidence from day one.</li>
+                        <li><i class="far fa-check-circle"></i> A supportive community of mentors, developers, and learners.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 animate__animated animate__fadeInRight">
+                    <p>Our platform combines interactive content, personalized guidance, and hands-on practice to ensure students not only learn but thrive. Whether you're just beginning your tech journey or aiming to upskill, Codo Academy is your trusted partner in growth.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+    
+            <div class="row mt-5">
+                <div class="col-lg-6 animate__animated animate__fadeInUp">
+                    <h3 class="mb-4">Empowering the next generation of tech innovators <span class="text-primary">with practical, project-based learning</span></h3>
+                    <p>Our programs are built around core principles of accessibility, creativity, and career-readiness. Every course is crafted with care by industry experts and educators who understand the evolving tech landscape.</p>
+    
+                    <div class="accordion accordion-flush" id="aboutAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="fw-bold text-primary me-2">01</span> What makes Codo Academy different?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">
+                                    We focus on project-based learning, mentorship, and real-world applications. Our platform is designed not just to teach theory, but to help students build tangible projects and portfolios.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="fw-bold text-primary me-2">02</span> Who can join Codo Academy?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">
+                                    Anyone with a passion for technology! Whether you're a student, working professional, or career-switcher, our courses are designed to support learners at all levels.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="fw-bold text-primary me-2">03</span> What courses do you offer?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">
+                                    We offer courses in web development, mobile app development, UI/UX design, cloud hosting, and more. Each course is updated regularly to reflect the latest industry standards.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate__animated animate__fadeInUp delay-1">
+                    <img src="/images/about-image.jpeg" alt="Team working on a project" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center animate__animated animate__fadeInLeft">
+                    <img src="/images/skill.jpeg" alt="Skills Image" class="img-fluid">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content animate__animated animate__fadeInRight">
+                    <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    
+                    <div class="skills-content">
+                        <div class="progress-label d-flex justify-content-between">
+                            <span>HTML</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                        
+                        <div class="progress-label d-flex justify-content-between">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                        
+                        <div class="progress-label d-flex justify-content-between">
+                            <span>JAVASCRIPT</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                        
+                        <div class="progress-label d-flex justify-content-between">
+                            <span>PHOTOSHOP</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>SERVICES</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 animate__animated animate__fadeInUp">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Lorem Ipsum</h3>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 animate__animated animate__fadeInUp delay-1">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-dice-d20"></i>
+                        </div>
+                        <h3>Sed ut perspici</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 animate__animated animate__fadeInUp delay-2">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Magni Dolores</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 animate__animated animate__fadeInUp delay-3">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                        <h3>Nemo Enim</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+       
+  <!-- Team Section -->
+
+<section id="team" class="team-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>TEAM</h2>
+        <div class="underline"></div>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+      
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-card">
+          <div class="member-img">
+            <img src="images/team/member2.jpeg" alt="Walter White">
+          </div>
+          <div class="member-info">
+            <h3>Walter White</h3>
+            <p class="position">Chief Executive Officer</p>
+            <p class="bio">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="team-card">
+          <div class="member-img">
+            <img src="images/team/member1.jpg" alt="Sarah Jhonson">
+          </div>
+          <div class="member-info">
+            <h3>Sarah Jhonson</h3>
+            <p class="position">Product Manager</p>
+            <p class="bio">Aut maiores voluptates amet et quis praesentium qui senda para</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="team-card">
+          <div class="member-img">
+            <img src="images/team/member3.jpg" alt="William Anderson">
+          </div>
+          <div class="member-info">
+            <h3>William Anderson</h3>
+            <p class="position">CTO</p>
+            <p class="bio">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="team-card">
+          <div class="member-img">
+            <img src="images/team/member2.jpeg" alt="Amanda Jepson">
+          </div>
+          <div class="member-info">
+            <h3>Amanda Jepson</h3>
+            <p class="position">Accountant</p>
+            <p class="bio">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>PRICING</h2>
+        <div class="underline"></div>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <!-- Free Plan -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3>Free Plan</h3>
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="number">0</span>
+              <span class="period">/ month</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Quam adipiscing vitae proin</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Nec feugiat nisl pretium</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Nulla at volutpat diam uteera</p>
+            </div>
+            <div class="feature unavailable">
+              <i class="fas fa-times"></i>
+              <p>Pharetra massa massa ultricies</p>
+            </div>
+            <div class="feature unavailable">
+              <i class="fas fa-times"></i>
+              <p>Massa ultricies mi quis hendrerit</p>
+            </div>
+          </div>
+          <div class="plan-cta">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+        
+        <!-- Business Plan -->
+        <div class="pricing-card featured">
+          <div class="plan-header">
+            <h3>Business Plan</h3>
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="number">29</span>
+              <span class="period">/ month</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Quam adipiscing vitae proin</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Nec feugiat nisl pretium</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Nulla at volutpat diam uteera</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Pharetra massa massa ultricies</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Massa ultricies mi quis hendrerit</p>
+            </div>
+          </div>
+          <div class="plan-cta">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+        
+        <!-- Developer Plan -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3>Developer Plan</h3>
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="number">49</span>
+              <span class="period">/ month</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Quam adipiscing vitae proin</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Nec feugiat nisl pretium</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Nulla at volutpat diam uteera</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Pharetra massa massa ultricies</p>
+            </div>
+            <div class="feature available">
+              <i class="fas fa-check"></i>
+              <p>Massa ultricies mi quis hendrerit</p>
+            </div>
+          </div>
+          <div class="plan-cta">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- TESTIMONIALS SECTION -->
+
+<section class="testimonial-section">
+    <h2 class="testimonial-heading">TESTIMONIALS</h2>
+    <div class="testimonial-subheading">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+    </div>
+
+    <div class="testimonial-container">
+        <div class="testimonial-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-item">
+                <div class="testimonial-author">
+                    <div class="testimonial-author-image">
+                        <img src="/images/team/member2.jpeg" alt="Saul Goodman">
+                    </div>
+                    <h3 class="testimonial-author-name">Saul Goodman</h3>
+                    <p class="testimonial-author-position">Ceo & Founder</p>
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-item">
+                <div class="testimonial-author">
+                    <div class="testimonial-author-image">
+                        <img src="/api/placeholder/100/100" alt="Sara Wilson">
+                    </div>
+                    <h3 class="testimonial-author-name">Sara Wilson</h3>
+                    <p class="testimonial-author-position">Designer</p>
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-item">
+                <div class="testimonial-author">
+                    <div class="testimonial-author-image">
+                        <img src="/api/placeholder/100/100" alt="Jena Karlis">
+                    </div>
+                    <h3 class="testimonial-author-name">Jena Karlis</h3>
+                    <p class="testimonial-author-position">Store Owner</p>
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-item">
+                <div class="testimonial-author">
+                    <div class="testimonial-author-image">
+                        <img src="/api/placeholder/100/100" alt="Matt Brandon">
+                    </div>
+                    <h3 class="testimonial-author-name">Matt Brandon</h3>
+                    <p class="testimonial-author-position">Freelancer</p>
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore.
+                </p>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-item">
+                <div class="testimonial-author">
+                    <div class="testimonial-author-image">
+                        <img src="/api/placeholder/100/100" alt="John Larson">
+                    </div>
+                    <h3 class="testimonial-author-name">John Larson</h3>
+                    <p class="testimonial-author-position">Entrepreneur</p>
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                </div>
+                <p class="testimonial-text">
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-dots">
+        <span class="testimonial-dot active" data-index="0"></span>
+        <span class="testimonial-dot" data-index="1"></span>
+        <span class="testimonial-dot" data-index="2"></span>
+        <span class="testimonial-dot" data-index="3"></span>
+        <span class="testimonial-dot" data-index="4"></span>
+    </div>
+</section>
+
+  <!-----contact-->
+  <section class="contact-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>CONTACT</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="contact-box contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>Address</h3>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>Call Us</h3>
+                            <p>+1 5589 55488 55</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>Email Us</h3>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Embed -->
+                    <iframe 
+                        class="map-container"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304903!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1619756483195!5m2!1sen!2sus"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="contact-box contact-form">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                        <textarea class="form-control" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----footer-->
+
+<footer class="footer-wrapper" style="background-color: var(--light-color); padding: 60px 0 30px 0;">
+    <!-- Newsletter -->
+    <div class="footer-container text-center mb-5">
+      <h4 style="color: var(--primary-color); font-weight: 600;">Join Our Newsletter</h4>
+      <p style="margin: 10px 0 20px;">Subscribe to our newsletter and receive the latest news about our products and services!</p>
+      <form onsubmit="event.preventDefault()" class="footer-subscribe-form">
+        <input type="email" placeholder="Enter your email" required
+          style="padding: 12px 20px; border-radius: 30px 0 0 30px; border: none; max-width: 400px; width: 100%;">
+        <button type="submit"
+          style="padding: 12px 30px; border-radius: 0 30px 30px 0; border: none; background-color: var(--secondary-color); color: white; font-weight: 500; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: background 0.3s;">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  
+    <!-- Main Footer -->
+    <div class="footer-container">
+      <div class="footer-row">
+        <!-- Address -->
+        <div class="footer-col mb-4">
+          <h5 style="color: var(--primary-color); font-weight: bold;">ARSHA</h5>
+          <p style="margin-top: 15px;">
+            A108 Adam Street<br>New York, NY 535022<br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com
+          </p>
+        </div>
+  
+        <!--  Links -->
+        <div class="footer-col mb-4">
+          <h6 style="font-weight: 600; color: var(--dark-color);">Useful Links</h6>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><a href="#" style="color: var(--text-color); text-decoration: none;">› Home</a></li>
+            <li><a href="#" style="color: var(--text-color); text-decoration: none;">› About us</a></li>
+            <li><a href="#" style="color: var(--text-color); text-decoration: none;">› Services</a></li>
+            <li><a href="#" style="color: var(--text-color); text-decoration: none;">› Terms of service</a></li>
+          </ul>
+        </div>
+  
+        <!-- Services -->
+        <div class="footer-col mb-4">
+          <h6 style="font-weight: 600; color: var(--dark-color);">Our Services</h6>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><a href="#" style="color: var(--text-color); text-decoration: none;">› Web Design</a></li>
+            <li><a href="#" style="color: var(--text-color); text-decoration: none;">› Web Development</a></li>
+            <li><a href="#" style="color: var(--text-color); text-decoration: none;">› Product Management</a></li>
+            <li><a href="#" style="color: var(--text-color); text-decoration: none;">› Marketing</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Links -->
+        <div class="footer-col mb-4">
+          <h6 style="font-weight: 600; color: var(--dark-color);">Follow Us</h6>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-icon">✖</a>
+            <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Footer -->
+    <div class="footer-bottom text-center">
+      <p>&copy; Copyright <strong>Arsha</strong>. All Rights Reserved</p>
+      <p>Designed by <a href="https://bootstrapmade.com" style="color: var(--secondary-color);">BootstrapMade</a></p>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
