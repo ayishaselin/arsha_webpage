@@ -143,18 +143,9 @@ body {
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 20px;
-}
+} 
 
-.section-title h2::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: var(--secondary-color);
-    bottom: 0;
-    left: calc(50% - 25px);
-}
+
 
 /* ==================== 
      about section
@@ -346,27 +337,6 @@ body {
     padding: 80px 0;
   }
   
-  .section-title {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .section-title h2 {
-    font-size: 32px;
-    font-weight: 700;
-    position: relative;
-    color: var(--text-color);
-    margin-bottom: 10px;
-  }
-  
-  
-  
-  .section-title p {
-    color: var(--gray);
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
   
   /* ==================== 
      TEAM SECTION
@@ -483,24 +453,24 @@ body {
         transform: translateY(0);
       }
       
-      /* Remove the initial scale transform from featured card */
+      
       .pricing-card.featured {
-        /* Previously: transform: scale(1.05); */
+      
         z-index: 1;
-        /* Keep the blue highlight on the featured card */
+        
         border-top: 3px solid var(--primary-color);
       }
       
       .pricing-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        /* Add blue top border on hover */
+       
         border-top: 3px solid var(--primary-color);
       }
       
-      /* Update featured card hover behavior */
+      
       .pricing-card.featured:hover {
-        /* Previously: transform: scale(1.05) translateY(-10px); */
+       
         transform: translateY(-10px);
       }
       
@@ -596,7 +566,7 @@ body {
         color: rgb(255, 255, 255)
       }
       
-      /* Update the Business Plan button styles - keep it different */
+     
       .pricing-card.featured .btn-buy {
         background: var(--primary-color);
         color: white;
@@ -607,7 +577,7 @@ body {
         border-color: var(--secondary-color);
       }
       
-      /* Add this new style for smooth border transition */
+      
       .pricing-card {
         border-top: 3px solid transparent;
         transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease;
@@ -617,9 +587,7 @@ body {
     /* ==================== 
    TESTIMONIALS SECTION
    ==================== */
-/* ==================== 
-   TESTIMONIALS SECTION
-   ==================== */
+
 .testimonial-section {
     padding: 60px 0;
     background-color: var(--light-color);
@@ -807,7 +775,7 @@ body {
     background: var(--secondary-color);
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+  
 }
 
 .section-title p {
@@ -815,7 +783,7 @@ body {
     font-size: 16px;
     max-width: 700px;
     margin: 0 auto;
-}
+} 
 
 .contact-box {
     border-radius: 5px;
@@ -1014,7 +982,32 @@ textarea.form-control {
     margin-top: 30px;
     font-size: 14px;
   }
-    
+  .subscribe-input {
+    padding: 12px 20px;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .subscribe-button {
+    padding: 12px 30px;
+    border-radius: 0 30px 30px 0;
+    border: none;
+    background-color: var(--secondary-color);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .subscribe-button:hover {
+    color: rgb(21, 7, 109);
+    background-color: #ffffff; /* Replace with a darker shade or preferred color */
+    transform: translateY(-2px);
+  }
+  
   /* ==================== 
      RESPONSIVE STYLES
      ==================== */
